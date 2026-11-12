@@ -1,6 +1,6 @@
 # Credit Risk: Gaussian vs. Gaussian Copula
 
-This is my second project for Numerical Methods in Finance. I wanted to see how much a portfolio of corporate bonds could lose when credit ratings change, especially when the issuers are exposed to the same bad economic conditions.
+I wanted to see how much a portfolio of corporate bonds could lose when credit ratings change, especially when the issuers are exposed to the same bad economic conditions.
 
 ## Why this problem matters
 
@@ -56,9 +56,3 @@ jupyter notebook Project2_CreditRisk.ipynb
 ```
 
 Run the cells from top to bottom. The notebook uses a fixed random seed so that the Monte Carlo results can be reproduced. Small differences are still possible with different versions of numerical libraries.
-
-## Assumptions and source
-
-The transition probabilities, bond values and project question come from the course materials for **Class 7: Credit Risk**, and the approach is adapted from the instructor's MATLAB examples. The repository contains my Python implementation, not the original course files.
-
-The portfolios are simplified: identical BBB marginal distributions for every bond, pairwise **latent Gaussian** correlation of 0.5, and no separate interest-rate or market-price model. The correlation of the final discrete bond values does not necessarily equal 0.5.
